@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+
+    width: 100%;
+    scroll-behavior: smooth;
+
+    overflow-x: hidden;
+}
+
+.header-li-dekstop {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    z-index: 20;
+}
+
+.header-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 101vw;
+    height: 85px;
+    background-color: #bbbbbb;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    z-index: 1;
+}
+
+.header-container img {
+    width: 170px;
+    margin-left: 4vw;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 38px;
+    width: 65px;
+    height: 60px;
+    background: transparent;
+    padding: 10px 10px 10px;
+
+    background-color: #621da4;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 4px #fff;
+
+    transition: border 1s, box-shadow 1s;
+}
+
+.header-menu:hover {
+    border: 2px solid #313131;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.header-menu img {
+    position: absolute;
+    right: 50px;
+    top: 23px;
+    width: 40px;
+    pointer-events: none;
+}
+
+
+
+.header-li {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    right: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 94vh;
+    
+    background: linear-gradient(0deg, #5d4b4b 0%, #2D2424 100%);
+    border-bottom: solid 2px #262626;
+
+    z-index: 1;
+    
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.4s;
+}
+
+.header-li.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header-li:target {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header-li-a {
+    text-decoration: none;
+    text-shadow: 1.5px 1.5px 0px #000;
+    color: #fff;
+
+    letter-spacing: 1.5px;
+    font-size: 26px;
+    font: bold;
+}
+
+.header-li {
+    display: none;
+}
+.open {
+    display: flex !important;
+}
