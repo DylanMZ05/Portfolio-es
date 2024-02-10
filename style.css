@@ -31,17 +31,18 @@ body, html {
     justify-content: space-between;
     align-items: center;
 
+    margin-top: -1px;
     width: 100vw;
-    height: 85px;
-    background-color: #bbbbbb;
+    height: 87px;
+    background-color: #301B3F;
     color: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+
     z-index: 20;
 }
 
 .header-container img {
-    width: 170px;
+    width: 70px;
     margin-left: 4vw;
 }
 
@@ -49,30 +50,26 @@ body, html {
     display: flex;
     flex-direction: column;
     
-    margin-right: 38px;
-    width: 65px;
-    height: 60px;
+    margin-right: 20px;
+    width: 45px;
+    height: 40px;
     background: transparent;
     padding: 10px 10px 10px;
 
-    background-color: #621da4;
-    border-radius: 8px;
-    border: 2px solid #fff;
-    box-shadow: 0px 0px 4px #fff;
-
-    transition: border 1s, box-shadow 1s;
+    background-color: #B4A5A5;
+    border-radius: 6px;
+    border: 1px solid #000000;
 }
 
 .header-menu:hover {
-    border: 2px solid #313131;
-    box-shadow: 0px 0px 10px #fff;
+    border: 2px solid #a8a8a8;
 }
 
 .header-menu img {
     position: absolute;
-    right: 50px;
-    top: 23px;
-    width: 40px;
+    right: 27px;
+    top: 28px;
+    width: 30px;
     pointer-events: none;
 }
 
@@ -90,8 +87,7 @@ body, html {
     justify-content: space-evenly;
     height: 94vh;
     
-    background: linear-gradient(0deg, #383838 0%, #bbbbbb 100%);
-    border-bottom: solid 2px #262626;
+    background: linear-gradient(0deg, #1d1325 0%, #301B3F 100%);
 
     z-index: 5;
 }
@@ -129,10 +125,28 @@ body, html {
 	}
 }
 
+#inicio {
+    scroll-margin-top: 100px;
+}
+
+#cabañas {
+    scroll-margin-top: 65px;
+}
+
+#actividades {
+    scroll-margin-top: 85px;
+}
+
+
+
 
 .first-section {
-    background-color: #ffffff;
+    background-image: url(images/first-section__background.jpeg);
+    background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
     margin-top: 85px;
+    color: #fff;
 
     height: 100vh;
 }
