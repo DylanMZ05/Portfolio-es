@@ -143,11 +143,20 @@ body, html {
 .first-section {
     background-image: url(images/first-section__background.jpeg);
     background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-    margin-top: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
 
+    height: 100vh;
+}
+
+.first-section__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #000000a1;
     height: 100vh;
 }
 
