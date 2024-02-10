@@ -56,7 +56,7 @@ body, html {
     background: transparent;
     padding: 10px 10px 10px;
 
-    background-color: #B4A5A5;
+    background-color: #b4a5a550;
     border-radius: 6px;
     border: 1px solid #000000;
 }
@@ -139,7 +139,6 @@ body, html {
 
 
 
-
 .first-section {
     background-image: url(images/first-section__background.jpeg);
     background-size: cover;
@@ -160,6 +159,8 @@ body, html {
     height: 100vh;
 }
 
+
+
 .second-section {
     box-shadow: 0px -5px 25px rgba(0, 0, 0, 0.5);
     margin-top: -1px;
@@ -173,16 +174,119 @@ body, html {
     text-align: center;
 }
 
+.second-section__header {
+    margin: 20px 15px;
+    font-size: 20px;
+}
+
+.second-section__txt p {
+    margin: 20px 20px;
+    font-size: 18px;
+}
+
+.second-section__txt video {
+    width: 90vw;
+    border-radius: 16px;
+    box-shadow: 0px 0px 15px #000;
+
+    border: 1px solid #000000;
+}
+
+
+
 
 .third-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    margin-top: -1px;
+    background-color: #151515;
+    color: #fff;
+}
+
+.third-section__header {
+    margin: 20px 10px;
+    font-size: 30px;
+}
+
+.third-section a {
+    text-decoration: none;
 }
 
 .third-section img {
     width: 90vw;
     border-radius: 16px;
     box-shadow: 0px 0px 15px #000;
+
+    border: 1px solid #000000;
+}
+
+.third-section__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    height: 50px;
+    margin: 5px 0 10px;
+    
+    background: linear-gradient(0deg, #1d1325 0%, #392646 100%);
+    color: #fff;
+    border-radius: 16px;
+    border: 2px solid #000000;
+}
+
+.third-section__button:hover {
+    background: #392646;
+}
+
+
+
+
+
+
+.footer {
+    background-color: #000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.footer-redes p {
+    display: flex;
+    justify-content: center;
+    
+    color: #fff;
+    margin: 20px 0 0;
+    font-size: 20px;
+    font: bold;
+}
+
+.footer-redes__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-redes__img img {
+    margin: 10px 10px 10px;
+    height: 35px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo p {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    margin: 10px 0 20px;
 }
