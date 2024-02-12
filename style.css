@@ -216,14 +216,15 @@ body, html {
     max-width: 550px;
     border-radius: 24px;
     margin-bottom: 20px;
+    border: 1px solid rgba(255, 0, 221, 0.589);
 
-    box-shadow: rgba(0, 0, 0, 0.904) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(122, 51, 113, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 50px 100px -20px, rgba(175, 175, 175, 0.3) 0px 30px 60px -30px, rgba(250, 0, 217, 0.678) 0px -2px 6px 0px inset;
 }
 
 .second-section__tp-2 {
     padding: 20px 20px 15px;
     margin: 0;
-    font-size: 26px;
+    font-size: 20px;
     text-shadow: 1px 1px #000;
     font: bold;
 }
