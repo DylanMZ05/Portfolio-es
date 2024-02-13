@@ -165,6 +165,10 @@ body, html {
 .first-section h1 {
     font-family: "Lalezar", system-ui;
     font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 11px;
+
     letter-spacing: 2px;
     margin-bottom: 0;
     animation: entrance 2s ease 0s 1 normal forwards;
@@ -175,6 +179,14 @@ body, html {
     animation: entrance 2s ease 0s 1 normal forwards;
 }
 
+.first-section a {
+    text-decoration: none;
+}
+
+.first-section img {
+    width: 30px;
+    margin: 0 2px;
+}
 
 
 
@@ -199,6 +211,8 @@ body, html {
     color: #ffffff;
 
     text-shadow: 2px 2px #000;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .second-section__tp {
@@ -273,6 +287,8 @@ body, html {
     color: #fff;
 
     text-shadow: 2px 2px #000;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .third-section a {
@@ -348,13 +364,13 @@ body, html {
 }
 
 .wsp {
-    margin: 10px 10px 15px;
-    height: 35px;
+    margin: 10px 5px 15px;
+    height: 25px;
 }
 
 .gmail {
-    height: 40px;
-    margin: 10px 10px 15px
+    height: 30px;
+    margin: 10px 5px 15px
 }
 
 
