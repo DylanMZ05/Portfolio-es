@@ -95,7 +95,7 @@ body, html {
     color: #fff;
 
     letter-spacing: 1.5px;
-    font-size: 26px;
+    font-size: 18px;
     font: bold;
 }
 
@@ -136,6 +136,8 @@ body, html {
 
 
 
+
+
 .first-section {
     background-image: url(images/first-section__background.jpeg);
     background-size: cover;
@@ -156,6 +158,25 @@ body, html {
     height: 100vh;
 }
 
+.first-section__container {
+    padding: 0;
+}
+
+.first-section h1 {
+    font-family: "Lalezar", system-ui;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    animation: entrance 2s ease 0s 1 normal forwards;
+}
+
+.first-section p {
+    margin-top: 0;
+    animation: entrance 2s ease 0s 1 normal forwards;
+}
+
+
+
 
 
 .second-section {
@@ -172,9 +193,10 @@ body, html {
 }
 
 .second-section h2 {
-    margin: 20px 15px;
+    padding: 20px 15px;
+    margin: 0px 0px 10px;
     font-size: 30px;
-    color: #ce0e91;
+    color: #ffffff;
 
     text-shadow: 2px 2px #000;
 }
@@ -198,13 +220,6 @@ body, html {
     flex-direction: column;
 }
 
-.second-section__txt video {
-    width: 90vw;
-    border-radius: 16px;
-    box-shadow: 0px 0px 15px #000;
-    border: 2px solid #000000;
-}
-
 .second-section__card {
     display: flex;
     justify-content: center;
@@ -215,10 +230,10 @@ body, html {
     width: 90vw;
     max-width: 550px;
     border-radius: 24px;
-    margin-bottom: 20px;
-    border: 1px solid rgba(255, 0, 221, 0.589);
+    margin-bottom: 15px;
+    border: 1px solid #5b0a7e;
 
-    box-shadow: rgba(0, 0, 0, 0.904) 0px 50px 100px -20px, rgba(175, 175, 175, 0.3) 0px 30px 60px -30px, rgba(250, 0, 217, 0.678) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 50px 100px -20px, rgba(175, 175, 175, 0.3) 0px 30px 60px -30px, #6a0c92 0px -2px 6px 0px inset;
 }
 
 .second-section__tp-2 {
@@ -238,11 +253,6 @@ body, html {
     letter-spacing: .7px;
 }
 
-.second-section__link {
-    color: #ce0e91;
-    text-decoration: none;
-}
-
 
 
 
@@ -260,7 +270,7 @@ body, html {
 .third-section h2 {
     margin: 20px 15px;
     font-size: 30px;
-    color: #ce0e91;
+    color: #fff;
 
     text-shadow: 2px 2px #000;
 }
@@ -294,15 +304,15 @@ body, html {
     margin: 5px 0 10px;
     width: 60vw;
     
-    background: linear-gradient(0deg, #36064b 0%, #5b0c42 100%);
+    background: linear-gradient(0deg, #3f0634 0%, #1f032b 100%);
     color: #fff;
     border-radius: 50px;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
     box-shadow: 2px 2px 2px #000;
 }
 
 .third-section__button:hover {
-    background: #392646;
+    background: linear-gradient(0deg, #5c094b 0%, #36064b 100%);
 }
 
 
@@ -349,6 +359,27 @@ body, html {
 
 
 .color-3 {
-    color: #ce0e91;
+    color: #7610a1;
     text-shadow: 1px 1px #000;
+}
+
+.item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+/* ANIMACIONES */
+
+@keyframes entrance {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
