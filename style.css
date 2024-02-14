@@ -33,7 +33,7 @@ body, html {
 
     margin-top: -1px;
     width: 100vw;
-    height: 87px;
+    height: 60px;
     background-color: #301B3F;
     color: #fff;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
@@ -42,8 +42,9 @@ body, html {
 }
 
 .header-container img {
-    width: 70px;
+    width: 50px;
     margin-left: 4vw;
+    margin-top: 10px;
 }
 
 .header-menu {
@@ -51,8 +52,8 @@ body, html {
     flex-direction: column;
     
     margin-right: 20px;
-    width: 45px;
-    height: 40px;
+    width: 35px;
+    height: 33px;
     padding: 10px 10px 10px;
 
     background-color: #b4a5a550;
@@ -67,22 +68,21 @@ body, html {
 .header-menu img {
     position: absolute;
     right: 17px;
-    top: 19px;
-    width: 50px;
+    top: 0px;
+    width: 40px;
     pointer-events: none;
 }
 
 .header-li {
     position: fixed;
     left: 0;
-    top: 83px;
+    top: 53px;
     right: 0;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 94vh;
     
     background: linear-gradient(0deg, #1d1325 0%, #301B3F 100%);
 
@@ -97,6 +97,15 @@ body, html {
     letter-spacing: 1.5px;
     font-size: 18px;
     font: bold;
+    margin: 20px;
+}
+
+.header-li-a-first {
+    margin-top: 40px;
+}
+
+.header-li-a-last {
+    margin-bottom: 40px;
 }
 
 .header-li {
@@ -295,19 +304,46 @@ body, html {
     text-decoration: none;
 }
 
-.third-section img {
-    width: 90vw;
-    border-radius: 16px;
-    box-shadow: 0px 0px 15px #000;
-
-    border: 2px solid #000000;
-}
-
 .third-section__carta-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    border-radius: 22px;
+    background-color: #070707;
+    margin: 10px;
+    box-shadow: 2.5px 5.0px 5.0px hsla(0, 0%, 0%, 0.904);
+    border: 1px solid #1a012473;
+}
+
+.third-section__img {
+    margin: 0px 10px;
+}
+
+.imagen {
+    width: 85vw;
+    border-radius: 16px;
+    box-shadow: rgba(26, 26, 49, 0.25) 0px 20px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(4, 17, 29, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.third-section__carta-container h4 {
+    margin: 15px 0;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+
+.third-section__carta-container p {
+    margin: 0;
+    font-size: 14px;
+    text-shadow: 2px 2px #000;
+}
+
+.link {
+    width: 30px;
+    margin: 5px 10px;
+    filter: drop-shadow(2px 2px 1px rgb(0, 0, 0))
 }
 
 .third-section__button {
