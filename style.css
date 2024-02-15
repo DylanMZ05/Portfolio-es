@@ -224,6 +224,7 @@ body, html {
     align-items: center;
     background-color: #070707;
     width: 90vw;
+    max-width: 750px;
     border-radius: 24px;
     margin-bottom: 25px;
     text-align: center;
@@ -253,6 +254,7 @@ body, html {
 .second-article__card h3 {
     padding: 20px 20px 15px;
     margin: 0;
+    max-width: 450px;
     font-size: 20px;
     text-shadow: 1px 1px #000;
     color: #7610a1;
@@ -260,7 +262,7 @@ body, html {
 
 .second-article__card p {
     padding: 0px 25px 25px;
-    max-width: 550px;
+    max-width: 450px;
     margin: 0;
     font-size: 16px;
     text-shadow: 1px 1px #000;
@@ -308,6 +310,7 @@ body, html {
     flex-direction: column;
 
     width: 90vw;
+    max-width: 750px;
     border-radius: 14px;
     background-color: #070707;
     margin: 30px 0;
@@ -321,6 +324,7 @@ body, html {
 
 .imagen {
     width: 85vw;
+    max-width: 700px;
     border-radius: 8px;
 }
 
@@ -398,6 +402,7 @@ body, html {
 
     border-radius: 8px;
     width: 90vw;
+    max-width: 650px;
     background-color: #070707;
     box-shadow: 2.5px 5px 5px hsla(0, 0%, 0%, 0.904);
     border: 1px solid #1a012473;
@@ -557,12 +562,71 @@ body, html {
     }
 
     .third-article__carta-container h4 {
-        font-size: 25px;
+        font-size: 30px;
         opacity: 0.8;
     }
-    
+
+    .third-article__carta-container p {
+        font-size: 25px;
+    }
+
+    .link {
+        width: 50px;
+        margin: 10px 20px 20px;
+    }
+
+
+
+
+    .fourth-article__img-container div {
+        width: 170px;
+    }
+
+    .fourth-article__img-container p {
+        font-size: 30px;
+    }
+
+    .fourth-article h2 {
+        font-size: 50px;
+    }
+
+    .fourth-article__img-container img {
+        width: 60px;
+    }
+
+
+
+    .footer-redes p {
+        font-size: 30px;
+    }
+
+    .wsp {
+        height: 45px;
+        margin: 10px 25px 55px;
+    }
+
+    .gmail {
+        height: 50px;
+        margin: 10px 25px 55px;
+    }
+
     .mobile {
         display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .header-menu {
+        display: none;
+    }
+
+    .header-li-dekstop {
+        display: flex;
+        margin-right: 50px;
+    }
+
+    .header-container {
+        height: 60px;
     }
 }
 
