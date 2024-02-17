@@ -16,6 +16,66 @@ body, html {
     overflow-x: hidden;
 }
 
+.idiome-button {
+    padding: 10px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.en {
+    color: #ffffff;
+    font-size: 25px;
+    width: 40px;
+}
+
+.es {
+    color: #00a1ff;
+    font-size: 25px;
+    width: 40px;
+}
+
+.check {
+    position: relative;
+    width: 50px;
+    margin: 0px 20px 0;
+    top: -11px;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 31.25px;
+    background-color: #333;
+    border-radius: 25px;
+    margin-left: -13px;
+}
+
+.check:after {
+    content: '';
+    position: absolute;
+    width: 31.25px;
+    height: 31.25px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: 0.5s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    margin-left: -13px;
+}
+
+.check:checked:after {
+    left: 44px;
+    border: 2px solid #00a1ff;
+}
+
+.check:checked:before {
+    background-color: #00a1ff;
+}
+
+
+
 .header {
     position: fixed;
     z-index: 20;
@@ -37,9 +97,13 @@ body, html {
     z-index: 20;
 }
 
-.header-container img {
+.header-logo img {
     width: 50px;
     margin-left: 4vw;
+    margin-top: 10px;
+}
+
+.header-menu img {
     margin-top: 10px;
 }
 
@@ -98,10 +162,6 @@ body, html {
 
 .header-li-a-first {
     margin-top: 40px;
-}
-
-.header-li-a-last {
-    margin-bottom: 40px;
 }
 
 .header-li {
@@ -500,10 +560,6 @@ body, html {
     display: none;
 }
 
-.header-li-dekstop {
-    display: none;
-}
-
 
 
 @media (min-width: 700px) {
@@ -615,7 +671,24 @@ body, html {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
+    .idiome-button {
+        padding: 0;
+        margin-right: 40px;
+    }
+    
+    .en {
+        color: #ffffff;
+        font-size: 25px;
+        width: 35px;
+    }
+    
+    .es {
+        color: #00a1ff;
+        font-size: 25px;
+        width: 35px;
+    }
+
     .header-menu {
         display: none;
     }
@@ -627,6 +700,36 @@ body, html {
 
     .header-container {
         height: 60px;
+    }
+
+    .header-li {
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 20px;
+
+        background: #301B3F;
+    }
+
+    .header-li-a {
+        text-decoration: none;
+        text-shadow: 1.5px 1.5px 0px #000;
+        color: #fff;
+        letter-spacing: 1.5px;
+        font-size: 18px;
+        font: bold;
+        margin: 0px 20px;
+    }
+
+    .es {
+        color: #00a1ff;
+        font-size: 16px;
+    }
+
+    .en {
+        color: #ffffff;
+        font-size: 16px;
     }
 }
 
@@ -641,6 +744,19 @@ body, html {
 
     .header-li-a {
         font-size: 24px;
+    }
+
+    .header-menu {
+        width: 62px;
+        height: 53px;
+    }
+
+    .header-li {
+        top: 80px;
+    }
+
+    .idiome-button {
+        padding: 0 20px 20px;
     }
 }
 
