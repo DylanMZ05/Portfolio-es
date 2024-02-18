@@ -27,12 +27,14 @@ body, html {
     color: #ffffff;
     font-size: 25px;
     width: 40px;
+    margin: 10px 20px;
 }
 
 .es {
     color: #00a1ff;
     font-size: 25px;
     width: 40px;
+    margin: 10px 20px;
 }
 
 .check {
